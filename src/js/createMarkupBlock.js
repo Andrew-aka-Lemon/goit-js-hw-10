@@ -1,8 +1,4 @@
 export function createMarkupBlock({ name, capital, population, flags, languages }) {
-  //   console.log(name.official);
-  //   console.log(capital[0]);
-  //   console.log(population);
-  //   console.log(flags.svg);
   let languageBlock = '';
 
   if (Object.values(languages).length > 1) {
@@ -13,7 +9,7 @@ export function createMarkupBlock({ name, capital, population, flags, languages 
 
   return `<div class="one_country_block">
 <img src="${flags.svg}" alt="flag of ${name.official}" class="country_img" />
-<p class="country_name">Ukraine</p>
+<p class="country_name">${name.official}</p>
 </div>
 <ul>
 <li class="one_country_item country_name"><span>Capital: </span>${capital[0]}</li>

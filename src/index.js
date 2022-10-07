@@ -10,8 +10,12 @@ refs.input.addEventListener('input', Debounce(onInput, DEBOUNCE_DELAY));
 
 function onInput(event) {
   const countryToFind = event.target.value.trim().toLowerCase();
+  console.log(countryToFind);
   if (!countryToFind) {
+    refs.countryList.innerHTML = '';
+    refs.countryInfo.innerHTML = '';
     return;
   }
+
   fetchCountries(countryToFind);
 }

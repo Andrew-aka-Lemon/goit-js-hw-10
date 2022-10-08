@@ -17,13 +17,3 @@ export function createMarkupBlock({ name, capital, population, flags, languages 
 <li class="one_country_item country_name"><span>Languages: </span>${languageBlock}</li>
 </ul>`;
 }
-
-/* <div class="one_country_block">
-<img src="https://flagcdn.com/ua.svg" alt="flag of ${Ukraine}" class="country_img" />
-<p class="country_name">Ukraine</p>
-</div>
-<ul>
-<li class="one_country_item country_name"><span>Capital: </span>${Kyiv}</li>
-<li class="one_country_item country_name"><span>Population: </span>${44134693}</li>
-<li class="one_country_item country_name"><span>Languages: </span>${Ukrainian}</li>
-</ul> */

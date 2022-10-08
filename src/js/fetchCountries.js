@@ -43,6 +43,6 @@ function checkCountriesNumber(data) {
   refs.countryInfo.innerHTML = markup;
 }
 
-function onError(error) {
+function onError() {
   Notiflix.Notify.failure('Країни з такою назвою немає!');
 }

@@ -45,6 +45,6 @@ function checkCountriesNumber(data) {
 }
 
 function onError(error) {
-  console.error(error);
+  // console.error(error);
   Notiflix.Notify.failure('Країни з такою назвою немає!');
 }

@@ -3,7 +3,6 @@ import Debounce from 'lodash.debounce';
 
 import { fetchCountries } from './js/fetchCountries';
 import { refs } from './js/refs';
-import { clearForm } from './js/clearForm';
 
 const DEBOUNCE_DELAY = 300;
 

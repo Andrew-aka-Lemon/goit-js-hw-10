@@ -11,7 +11,8 @@ body {
   color: #212121;
   line-height: 1.5;
 
-  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+  /* background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db); */
+  background: linear-gradient(90deg, #e55d87, #5fc3e4);
 }
 
 #search-box {

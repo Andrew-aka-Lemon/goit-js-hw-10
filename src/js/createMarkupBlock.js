@@ -1,11 +1,5 @@
 export function createMarkupBlock({ name, capital, population, flags, languages }) {
-  let languageBlock = '';
-
-  if (Object.values(languages).length > 1) {
-    languageBlock = Object.values(languages).join(', ');
-  } else if (Object.values(languages).length === 1) {
-    languageBlock = Object.values(languages)[0];
-  }
+  const languageBlock = Object.values(languages).join(', ');
 
   return `<div class="one_country_block">
 <img src="${flags.svg}" alt="flag of ${name.official}" class="country_img" />

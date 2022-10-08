@@ -3,6 +3,7 @@ import Notiflix from 'notiflix';
 import { createMarkupBlock } from './createMarkupBlock';
 import { createMarkupList } from './createMarkupList';
 import { refs } from './refs';
+import { clearMarkup } from './clearMarkup';
 
 const BASE_URL = 'https://restcountries.com';
 const fetchOptions = 'name,capital,population,flags,languages';
@@ -15,8 +16,7 @@ export function fetchCountries(name) {
 }
 
 function checkResponse(response) {
-  refs.countryList.innerHTML = '';
-  refs.countryInfo.innerHTML = '';
+  clearMarkup();
 
   if (!response.ok) {
     throw new Error();
@@ -44,5 +44,5 @@ function checkCountriesNumber(data) {
 }
 
 function onError() {
-  Notiflix.Notify.failure('Країни з такою назвою немає!');
+  Notiflix.Notify.failure('There is no such country exist!');
 }

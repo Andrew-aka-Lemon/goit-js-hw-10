@@ -3,7 +3,6 @@ import Notiflix from 'notiflix';
 import { createMarkupBlock } from './createMarkupBlock';
 import { createMarkupList } from './createMarkupList';
 import { refs } from './refs';
-// import { clearForm } from './clearForm';
 
 const BASE_URL = 'https://restcountries.com';
 const fetchOptions = 'name,capital,population,flags,languages';
@@ -45,6 +44,5 @@ function checkCountriesNumber(data) {
 }
 
 function onError(error) {
-  // console.error(error);
   Notiflix.Notify.failure('Країни з такою назвою немає!');
 }
